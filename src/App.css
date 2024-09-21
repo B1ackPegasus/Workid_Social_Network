@@ -1,0 +1,17 @@
+@font-face{
+    font-family: Roboto;
+    src:url("./fonts/Roboto-Regular.ttf");
+}
+@font-face{
+    font-family:MonaSans;
+    src:url("./fonts/Mona-Sans-Regular.ttf");
+}
+@font-face{
+    font-family:GrandCru;
+    src:url("./fonts/GrandCru-LightS.otf");
+}
+*{
+    margin:0;
+    padding:0;
+}
+

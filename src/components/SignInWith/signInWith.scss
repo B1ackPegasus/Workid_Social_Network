@@ -1,0 +1,34 @@
+.sign-in-with{
+    display: flex;
+    flex-direction:row;
+    padding:15px;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #DDDDDD;
+    border-radius: 50px;
+    background-color: #FBFBFB;
+    width:350px;
+
+}
+ .sign-in-with:hover{
+   cursor: pointer;
+   box-shadow: #8F9090 2px 5px 2px;
+ }
+
+.sign-in-icon{
+  padding-right: 8px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.sign-in-text{
+  color:black;
+}
+
+@media(max-width:1200px){
+  .sign-in-with{
+    width: 100% ;
+    box-sizing: border-box;
+  }
+}
