@@ -3,6 +3,7 @@ import forSignIn from "../../assets/constants/signIn";
 import SignInWith from "../../components/SignInWith/SignInWith";
 import {SignIn} from "../../assets/shared/types";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import {Link} from "react-router-dom";
 
 const Login = () => {
     return (
@@ -56,13 +57,19 @@ const Login = () => {
             </div>
             <div className="bottom-right-part">
                 {
-                    forSignIn.map((element:SignIn) => (
-                        <SignInWith icon={element.icon} text={element.text}/>
+                    forSignIn.map((element:SignIn,index:number) => (
+                        <SignInWith icon={element.icon} text={element.text} key = {index}/>
                     ))
                 }
             </div>
 
         </div>
+                <div className="button-register-in-login">
+                    <p> Don't have account yet? </p>
+                    <Link to="/register">
+                    <button>Register</button>
+                    </Link>
+                </div>
             </div>
 
 

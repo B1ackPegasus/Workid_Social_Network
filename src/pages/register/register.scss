@@ -1,0 +1,119 @@
+.register-page{
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto,sans-serif;
+  cursor:default;
+  position: relative;
+  overflow: hidden;
+  .register-container{
+      width:83.3%;
+      height:80%;
+      display: flex;
+      align-items: center;
+        .registration{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h1{
+            color:black;
+            font-family: GrandCru,sans-serif;
+            font-size: 55px;
+            font-weight: bolder;
+            margin-bottom:10px;
+            text-align: center;
+          }
+          span{
+            color:#5c5c5c;
+            font-size: 18px;
+            margin-bottom: 20px;
+            span{
+              color:black;
+            }
+          }
+          form{
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+            input{
+            width: 350px;
+            padding:15px;
+            border:1px solid #DDDDDD;
+            border-radius: 50px;
+            background-color: #FBFBFB;
+            height:22px;
+            font-size:16px;
+            }
+            input:focus{
+              outline:none;
+              box-shadow: #8F9090 2px 5px 2px;
+            }
+              button{
+                font-size:16px;
+                margin-top: 10px;
+                box-sizing: content-box;
+                background-color: black;
+                color:white;
+                padding:15px;
+                border-radius: 50px;
+              }
+              button:hover{
+                color: #dcd7d7;
+                cursor: pointer;
+              }
+
+          }
+          .ref-to-login{
+            color:#5c5c5c;
+            margin-top:20px;
+            font-size: 18px;
+            background-color: rgba(221, 221, 221, 0.48);
+            padding: 7px;
+            border-radius: 50px;
+
+              button{
+                color:black;
+                cursor: pointer;
+                border-width: 0 0 1px 0;
+                border-color: black;
+                background: none;
+                font-size: 16px;
+                font-weight: bold;
+                padding-left:3px;
+              }
+          }
+
+        }
+
+  }
+  img{
+    z-index: -1;
+    width:800px;
+    height:800px;
+    position: absolute;
+    bottom: -400px;
+    right: -400px;
+    animation: spin 30s linear 0s infinite;
+  }
+  @media(max-width:780px){
+    img{
+      width:500px;
+      height:400px;
+      bottom:-200px;
+      right:-250px;
+    }
+  }
+
+  }
+
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
